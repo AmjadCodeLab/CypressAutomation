@@ -12,7 +12,6 @@ describe("Testing Test App",()=>{
         cy.contains("Employee List").click();
         // Table -> Rows -> Data
         cy.get('.table').find('tr')
-        .contains("AutoUser2").parent().contains("Benefits").click();
-        
+        .contains("AutoUser").parent().contains("Benefits").click();
     })
 })
